@@ -11,14 +11,14 @@ var swiper = new Swiper(".mySwiper", {
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: true
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination"
     },
     navigation: {
         nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-prev'
       }
 });
 
