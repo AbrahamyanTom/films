@@ -81,9 +81,8 @@ header>nav>.search-box , footer>nav>.search-box{
 
 
     max-width: 389px;
-
     width: auto;
-    height: 77px;
+    height:auto;
     background: #F4F4F4;
     display: flex;
     justify-content: center;
@@ -92,8 +91,8 @@ header>nav>.search-box , footer>nav>.search-box{
 }
 
 header>nav>.search-box>input, footer>nav>.search-box>input {
-    width: 353px;
-    height: 77px;
+    width: 250px;
+    height: 50px;
     background: #F4F4F4;
     border: none;
     border-radius: 5px;
@@ -116,7 +115,7 @@ header>nav>.search-box>button,footer>nav>.search-box>button {
 
 header>nav>.search-box>button>i, footer>nav>.search-box>button>i{
     display: block;
-    font-size: 23px;
+    font-size: 21px;
     margin-right: 19px;
 }
 
