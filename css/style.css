@@ -9,7 +9,6 @@
 /* header */
 
 header{
-
     width: 100%;
     height: 77px;
     display: flex;
@@ -333,13 +332,14 @@ footer>nav>menu  {
 /* searchbox */
 
 .search-box-mobile{
-   
+    position: absolute;
+    z-index: 11111;
     margin: 0 auto;
-    width: 100%;
-
+   
     transform: translateY(-220%);
+    
     transition: .3s ease;
-    width: auto;
+    width: 100% !important;
     height:auto;
     background: #F4F4F4;
     border-radius: 5px;
@@ -350,7 +350,9 @@ footer>nav>menu  {
 }
 
 .search-box-mobile.open{
+ 
     transform: translateY(-85%);
+ 
 }
 
 .search-box-mobile>input{

@@ -245,7 +245,7 @@
 
     footer> nav{
         width: 100%;
-        gap:30px 0;
+        gap:15px 0;
         flex-direction: column !important;
     }
     footer> nav>menu{
@@ -280,11 +280,37 @@
 }
 
 @media screen and (max-width:530px) {
+    main>.actual-now>h1 , main>.top-serials>h1,  main>.top-films>h1  {
+        font-size: 16px;
+       
+    }
     main>.actual-now>.items,
     main>.top-serials>.items,
     main>.top-films>.items{
-        flex-direction: column;
+        margin: 0;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+    }
+
+    main>.actual-now>.items>.item,
+    main>.top-serials>.items>.item,
+    main>.top-films>.items>.item{
+       width: 146px;
+       height: 143px;
+    }
+    main>.actual-now>.items>.item>h3,
+    main>.top-serials>.items>.item>h3,
+    main>.top-films>.items>.item>h3{
+       font-size: 13px;
+       line-height: 18.2px;
+       font-weight: 400;
+    }
+
+    main>.actual-now>.items>.item>p,
+    main>.top-serials>.items>.item>p,
+    main>.top-films>.items>.item>p{
+       font-size: 12px;
     }
 
     main>.actual-now>.items>.item:nth-child(3),
