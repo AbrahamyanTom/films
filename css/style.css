@@ -1,9 +1,17 @@
+@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProReg.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProBla.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProLig.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProMed.woff) format('woff')}@font-face{font-family:gotham pro;font-style:italic;font-weight:400;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProLigIta.woff) format('woff')}@font-face{font-family:gotham pro;font-style:normal;font-weight:700;src:local('Gotham Pro'),url(https://fonts.cdnfonts.com/s/12664/GothaProBol.woff) format('woff')}@font-face{font-family:gotham pro medium;font-style:italic;font-weight:500;src:local('Gotham Pro Medium'),url(https://fonts.cdnfonts.com/s/12664/GothamProMediumItalic.woff) format('woff')}
+/* -------------------------------------------------- */
+
+/* -------------------Fonts------------------------------- */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gotham Pro', 'Arial';
 }
+
+
 
 
 /* header */
@@ -254,21 +262,27 @@ footer> nav > .social-media>a>div{
     opacity: .7;
 }
 
-footer> nav > .social-media>a>div>i{
-
-    font-size: 22px;
-    color:#fff;
+footer> nav > .social-media>a>div>img,footer>nav>.logo-and-icons>.social-media>div> img{
+    width: 14px;
+    height: 10px;
 }
 
-footer> nav > .social-media>a> .vk{
+
+
+footer> nav > .social-media>a> .vk, footer>nav>.logo-and-icons>.social-media>a> .vk{
     background:#2683EE;
 }
 
-footer> nav > .social-media>a> .youtube{
+footer> nav > .social-media>a> .youtube,footer>nav>.logo-and-icons>.social-media>a> .youtube{
     background:#FF0000;
 }
 
-footer> nav > .social-media>a> .telegram{
+footer> nav > .social-media>a> .youtube > img,footer>nav>.logo-and-icons>.social-media>a> .youtube>img{
+    width: 17px;
+    height: 14px;
+}
+
+footer> nav > .social-media>a> .telegram,footer>nav>.logo-and-icons>.social-media>a> .telegram{
     background:#279FDA;
 }
 
@@ -277,7 +291,9 @@ footer>nav>menu  {
     flex-wrap: wrap;
 }
 
-
+footer>nav>.logo-and-icons{
+    display: none;
+}
 
 /* ------------------------------------------------------- */
 

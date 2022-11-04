@@ -62,20 +62,20 @@
 
     main {
         max-width: 1920px;
-
+        
     }
 
-    main>.actual-now,
+    /* main>.actual-now,
     main>.top-films,
     main>.top-serials {
-        max-width: 1500px;
-    }
+      
+    } */
 
 
     main>.actual-now,
     main>.top-serials,
     main>.top-films {
-        max-width: 1500px;
+        
         margin-top: 30.5px;
 
     }
@@ -165,7 +165,7 @@
 
     header>nav>.search-box , footer>nav>.search-box{
         /* margin in 1920px */
-        max-width: 230px;
+       
         height: auto;   
     }
 
@@ -241,19 +241,21 @@
     }
 
         /* footer */
+
     footer{
         width: 100%;
         height: auto;
     }
 
     footer> nav{
+  
         width: 100%;
         gap:15px 0;
         flex-direction: column !important;
     }
     footer> nav>menu{
-        margin:10px 0;
         order:1;
+        margin:10px 0;
         width: 100%;
     }
     footer>nav>menu>li>a{
@@ -261,25 +263,60 @@
     }
     footer> nav>.search-box{
         order:2;
-        width: 100% 1 !important;
+        width: 85%  !important;
+    }
+    footer> nav>.search-box>input{
+        width: 80% !important;
     }
 
-    footer> nav>.logo >a{
-        order:3;
-        width: 80%;
-        font-size: 24px;
+    footer> nav>.logo{
+        display: none !important;
+    }
+
+    footer> nav > .social-media{
+        display: none;
+    }
+
+
+
+    footer>nav>.logo-and-icons{
+        margin: 26px 0;
+        order: 4;
+        display: flex !important;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    footer> nav >.logo-and-icons> .social-media{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer> nav > .logo-and-icons >.social-media>a>div{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+        
+    footer>nav>.logo-and-icons>.logo>a{
+    
+        text-decoration: none;
+        color:#111111;
+        width: 50%;
+        font-size: 24px !important;
         font-weight: bold;
-        display: inline-block;
         text-align: center;
     }
-    footer> nav > .social-media{
-        order:4;
-        width: 40%;
-        margin-bottom: 15px;
-    }
     
 
-    
 }
 
 @media screen and (max-width:530px) {
