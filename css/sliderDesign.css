@@ -72,10 +72,11 @@
 }
 
 .swiper-slide {
+
   position: relative;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background-color:rgb(0,0,0);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -99,6 +100,10 @@
   height: 100%;
   object-fit: cover;
 }
+.slide-img.dark {
+  opacity: .4;
+}
+
 .swiper-slide > .content {
   width: 40%;
   min-height: 25%;
