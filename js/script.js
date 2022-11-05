@@ -31,7 +31,6 @@ const swiperBtns = document.querySelectorAll('.swiper-btn');
 const itemImg  = document.querySelectorAll('.item-img');
 
 
-console.log(itemImg)
 
 function dark(){
     main.classList.toggle("dark");

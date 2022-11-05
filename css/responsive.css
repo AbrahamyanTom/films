@@ -352,7 +352,7 @@
     main>.actual-now>.items,
     main>.top-serials>.items,
     main>.top-films>.items {
-        margin: 14px;
+        margin: 14px 0;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
