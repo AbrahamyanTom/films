@@ -20,8 +20,8 @@ main.dark{
     background-color: rgba(0, 0, 0, 0.8) !important;
     color: black !important;
 }
-.item-img.dark{
-    opacity: .4;
+.item-img.dark,.genre.dark,.plus.dark{
+    opacity: .3 !important;
 }
 
 /* header */

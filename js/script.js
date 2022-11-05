@@ -1,26 +1,35 @@
-
-
-// Slider js 
 var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "1.1",
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true
-    },
     pagination: {
-        el: ".swiper-pagination"
+      el: ".swiper-pagination",
+      type: "progressbar",
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
-});
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+// // Slider js 
+// var swiper = new Swiper(".mySwiper", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "1.1",
+//     coverflowEffect: {
+//         rotate: 50,
+//         stretch: 0,
+//         depth: 100,
+//         modifier: 1,
+//         slideShadows: true
+//     },
+//     pagination: {
+//         el: ".swiper-pagination"
+//     },
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev'
+//       }
+// });
 
 const burgerBtn = document.querySelector('.burger-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -29,11 +38,12 @@ const main = document.querySelector('main');
 const sliderImg = document.querySelectorAll('.slide-img');
 const swiperBtns = document.querySelectorAll('.swiper-btn');
 const itemImg  = document.querySelectorAll('.item-img');
-
-
+const plus = document.querySelectorAll('.plus');
+const genre = document.querySelectorAll('.genre');
 
 function dark(){
     main.classList.toggle("dark");
+    
     sliderImg.forEach((img)=>{
         img.classList.toggle("dark");
     })
@@ -43,6 +53,13 @@ function dark(){
     itemImg.forEach((img)=>{
         img.classList.toggle("dark");
     })
+    genre.forEach((genre)=>{
+        genre.classList.toggle("dark");
+    })
+    plus.forEach((plus)=>{
+        plus.classList.toggle("dark");
+    })
+   
 }
 
 function removeDark(){
